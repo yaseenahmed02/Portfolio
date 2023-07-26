@@ -40,7 +40,7 @@ const Navbar = () => {
         </li>
         <li className="nav-item">
           <Link to="work" smooth={true} duration={500}>
-            Work
+            Projects
           </Link>
         </li>
       </ul>
