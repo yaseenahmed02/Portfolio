@@ -23,7 +23,9 @@ const Home = () => {
           <div>
             <Link
               to="about"
-              smooth
+              spy={true}
+              hashSpy={true}
+              smooth={true}
               duration={500}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-cyan-500 cursor-pointer hover:bg-cyan-600"
             >
