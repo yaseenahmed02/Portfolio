@@ -2,6 +2,7 @@ import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import me2 from "../assets/me2.png"; // Assuming me2 is the larger image
 import { Link } from "react-scroll";
+import Typewriter from "react-ts-typewriter";
 
 const Home = () => {
   return (
@@ -12,7 +13,12 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-6xl font-bold text-white">
-            Hey, I'm Yaseen Ahmed
+            <Typewriter
+              text="Hey, I'm Yaseen Ahmed"
+              typingSpeed={0}
+              loop={true}
+              delay={15000} // 30000 milliseconds = 30 seconds
+            />
           </h2>
           <p className="text-gray-300 py-4 max-w-md">
             Embrace brilliance and innovation. With an entrepreneurial spirit
