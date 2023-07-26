@@ -12,8 +12,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const handleClick = (e) => {
-    e.preventDefault(); // Prevent the event from bubbling up
+  const handleClick = () => {
     setNav(!nav);
   };
 
@@ -44,11 +43,6 @@ const Navbar = () => {
             Work
           </Link>
         </li>
-        {/* <li className="nav-item">
-          <Link to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li> */}
       </ul>
 
       {/* Hamburger */}
@@ -69,30 +63,27 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          {" "}
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          {" "}
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          {" "}
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          {" "}
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
       </ul>
+
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
@@ -136,4 +127,5 @@ const Navbar = () => {
     </div>
   );
 };
+
 export default Navbar;
