@@ -23,8 +23,8 @@ const Home = () => {
           <p className="text-gray-300 py-4 max-w-md">
             Embrace brilliance and innovation. With an entrepreneurial spirit
             and tech prowess, I bring transformative solutions that shape a
-            brighter tomorrow. Let's collaborate and exceed expectations on this
-            exhilarating journey.
+            brighter tomorrow. Let's collaborate and venture into new frontiers
+            on this exciting journey.
           </p>
           <div>
             <Link
