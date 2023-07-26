@@ -5,7 +5,7 @@ const Works = () => {
   return (
     <div
       name="work"
-      className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-4 pt-[100px] pb-16" // Add padding-bottom here
+      className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-4 pt-[60px] pb-16" // Add padding-bottom here
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full">
         <div className="pb-8 w-full flex justify-center items-center flex-col">
