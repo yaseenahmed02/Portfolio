@@ -19,7 +19,7 @@ const Home = () => {
               text="Hey, I'm Yaseen Ahmed"
               typingSpeed={0}
               loop={true}
-              delay={15000} // 30000 milliseconds = 30 seconds
+              delay={30000} // 30000 milliseconds = 30 seconds
             />
           </h2>
           <p className="text-blueGray py-4 max-w-md">
