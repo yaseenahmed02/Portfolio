@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-royalBlue text-white" /* Updated background and text color */
+      className="h-screen w-full bg-royalBlue text-white z-0" /* Updated background and text color */
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
@@ -46,7 +46,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="relative mt-8 md:mt-12">
+        <div className="relative mt-8 md:mt-12 z-0">
           <a
             href="https://www.freepik.com/free-vector/hacker-operating-laptop-cartoon-icon-illustration-technology-icon-concept-isolated-flat-cartoon-style_11602236.htm#query=coder%20png&position=7&from_view=search&track=ais"
             target="_blank"

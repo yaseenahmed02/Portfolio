@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-royalBlue text-white">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-royalBlue text-white z-50">
       <div>
         <h1 className="font-thin text-2xl italic font-serif">YA</h1>
       </div>
