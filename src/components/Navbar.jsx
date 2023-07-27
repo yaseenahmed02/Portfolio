@@ -1,25 +1,21 @@
 import React, { useState } from "react";
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-  FaFacebook,
-} from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const handleClick = () => {
+
+  const handleClick = (e) => {
+    e.preventDefault();
     setNav(!nav);
   };
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-royalBlue text-white">
       <div>
-        <h1 className=" font-thin text-2xl italic font-serif">YA</h1>
+        <h1 className="font-thin text-2xl italic font-serif">YA</h1>
       </div>
       {/* menu */}
       <ul className="hidden md:flex gap-x-8">
@@ -40,9 +36,14 @@ const Navbar = () => {
         </li>
         <li className="nav-item">
           <Link to="work" smooth={true} duration={500}>
-            Projects
+            Work
           </Link>
         </li>
+        {/* <li className="nav-item">
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li> */}
       </ul>
 
       {/* Hamburger */}
@@ -54,7 +55,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-gradient-to-r from-purple-600 to-indigo-600 flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-gradient-to-r from-royalBlue to-blueGray flex flex-col justify-center items-center"
         }
       >
         <li className="py-6 text-4xl">
@@ -77,13 +78,12 @@ const Navbar = () => {
             Work
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        {/* <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
           </Link>
-        </li>
+        </li> */}
       </ul>
-
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
@@ -92,20 +92,22 @@ const Navbar = () => {
               className="flex justify-between items-center w-full text-white"
               href="http://linkedin.com/in/yaseen-ahmed-8604601a4/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#14202E]">
             <a
               className="flex justify-between items-center w-full text-white"
               href="https://github.com/yaseenahmed02"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#88A9C3]">
             <a
               className="flex justify-between items-center w-full text-white"
               href="mailto:yahme02@gmail.com"
@@ -113,7 +115,7 @@ const Navbar = () => {
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#2B4257]">
             <a
               className="flex justify-between items-center w-full text-white"
               href="/resume.pdf"

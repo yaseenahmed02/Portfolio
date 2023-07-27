@@ -6,10 +6,11 @@ const About = () => {
     <div
       name="about"
       id="about"
-      className="w-full h-screen bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex justify-center items-center"
+      className="w-full h-screen bg-royalBlue text-white flex justify-center items-center" /* Updated background color to royal blue */
     >
-      <div className="py-16 rounded-md bg-cyan-500 bg-opacity-75 flex flex-col justify-center items-center w-4/6 transition-all transform hover:scale-105">
-        <p className="text-4xl font-bold mb-4">About Me</p>
+      <div className="py-16 rounded-md bg-midnightBlue flex flex-col justify-center items-center w-4/6 transition-all transform hover:scale-105">
+        <p className="text-4xl font-bold mb-4 text-luxuryGold">About Me</p>{" "}
+        {/* Updated text color */}
         <div className="max-w-[1000px] w-full px-8">
           <div className="sm:text-center">
             <Typewriter

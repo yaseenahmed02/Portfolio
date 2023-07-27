@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <footer
       id="main-footer"
-      className="py-8 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-center fixed bottom-0 w-full hidden" // Add "hidden" class here
+      className="py-8 bg-royalBlue text-white text-center fixed bottom-0 w-full hidden" // Add "hidden" class here
     >
       © {new Date().getFullYear()} Yaseen Ahmed. All rights reserved.
     </footer>

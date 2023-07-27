@@ -8,11 +8,13 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-r from-purple-600 to-indigo-600"
+      className="h-screen w-full bg-royalBlue text-white" /* Updated background and text color */
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-6xl font-bold text-white">
+          <h2 className="text-4xl sm:text-6xl font-bold text-navyBlue">
+            {" "}
+            {/* Updated text color */}
             <Typewriter
               text="Hey, I'm Yaseen Ahmed"
               typingSpeed={0}
@@ -20,7 +22,9 @@ const Home = () => {
               delay={15000} // 30000 milliseconds = 30 seconds
             />
           </h2>
-          <p className="text-gray-300 py-4 max-w-md">
+          <p className="text-blueGray py-4 max-w-md">
+            {" "}
+            {/* Updated text color */}
             Embrace brilliance and innovation. With an entrepreneurial spirit
             and tech prowess, I bring transformative solutions that shape a
             brighter tomorrow. Let's collaborate and venture into new frontiers
@@ -33,7 +37,7 @@ const Home = () => {
               hashSpy={true}
               smooth={true}
               duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-cyan-500 cursor-pointer hover:bg-cyan-600"
+              className="group text-royalBlue w-fit px-6 py-3 my-2 flex items-center rounded-md dark-luxury-grey cursor-pointer hover:bg-blueGray-900" /* Updated button colors and added new CSS class */
             >
               About Me
               <span className="group-hover:rotate-90 duration-300">

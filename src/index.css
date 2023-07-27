@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
 @layer base {
   body {
     @apply font-[Raleway];
@@ -11,24 +12,24 @@
     @apply cursor-pointer;
   }
 }
+
 .content-div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 250px;
 }
+
 .content-div:hover {
-  background-image: linear-gradient(
-    to right,
-    rgba(112, 157, 255, 0.8),
-    hsla(242, 74%, 61%, 0.8)
-  ) !important;
+  /* Remove gradient */
+  background-image: none !important;
 }
+
 .nav-item {
   @apply px-4;
   @apply cursor-pointer;
   position: relative;
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -41,11 +42,12 @@
   transform: translateX(-50%) scaleY(0);
   width: 80%; /* Adjust the width of the box */
   height: 4px; /* Set the height of the box to a smaller value */
-  background-color: #3b82f6; /* Update to a blue color */
+  background-color: #88a9c3; /* Updated to Royal Blue color */
   opacity: 0;
   transition: opacity 0.3s, transform 0.3s;
   z-index: -1;
   border-radius: 4px; /* Add rounded corners to the box */
+  box-shadow: 0px 0px 6px 0px #ffd700; /* Add a slight glow effect for contrast */
 }
 
 .nav-item:hover::before {
@@ -58,6 +60,7 @@
   padding: 0.5rem 1rem; /* Slightly reduce padding for a more compact look */
 }
 
+/* Background color and glow effect for social icons */
 .bg-cyan-800:hover::before,
 .bg-cyan-800:hover::after {
   content: "";
@@ -67,7 +70,7 @@
   border-radius: inherit;
   top: 0;
   left: 0;
-  background-color: rgba(29, 78, 216, 0.2);
+  background-color: rgba(255, 215, 0, 0.2); /* Update to Royal Blue color */
   animation: glow 1.5s infinite;
 }
 
@@ -84,4 +87,23 @@
     transform: scale(1);
     opacity: 0.8;
   }
+}
+
+/* Update the background color for the navbar */
+.bg-royalBlue {
+  background-color: #091235; /* Royal Blue */
+}
+
+/* Add Midnight Blue color class */
+.bg-midnightBlue {
+  background-color: #88a9c3; /* Midnight Blue */
+}
+
+.dark-luxury-grey {
+  background-color: #88a9c3; /* Dark Luxury Grey color */
+  color: #ffffff; /* White text color for contrast */
+}
+
+.skillsGRID > div {
+  background-color: #88a9c3;
 }
