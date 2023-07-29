@@ -3,7 +3,7 @@
 
 ## Overview
 
-This is the readme file for the portfolio website of Yaseen Ahmed, a seasoned Tech Visionary and Software Developer. The website showcases Yaseen's skills, projects, and a brief introduction about him. It is built using React and features a responsive design with visually appealing components.
+Welcome to my portfolio website repository! I'm Yaseen Ahmed, a seasoned Tech Visionary and Software Developer. This website showcases my skills, projects, and provides a brief introduction about me. I've built it using React, ensuring a responsive design with visually appealing components. This readme serves as an introduction to my project, and I'm thrilled to share my work with you. Feel free to explore my projects and learn more about me. If you have any questions or inquiries, don't hesitate to reach out. Thank you for visiting!
 
 ## Table of Contents
 
