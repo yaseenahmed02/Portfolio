@@ -99,6 +99,11 @@
   background-color: #88a9c3; /* Midnight Blue */
 }
 
+/* Add padding to the main content */
+.main-content {
+  padding-top: 64px; /* Adjust the value as needed */
+}
+
 .dark-luxury-grey {
   background-color: #88a9c3; /* Dark Luxury Grey color */
   color: #ffffff; /* White text color for contrast */

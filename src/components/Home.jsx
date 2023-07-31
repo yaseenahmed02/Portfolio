@@ -6,12 +6,19 @@ import Typewriter from "react-ts-typewriter";
 
 const Home = () => {
   return (
-    <div
-      name="home"
-      className="h-screen w-full bg-royalBlue text-white z-0" /* Updated background and text color */
-    >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full">
+    <div className="bg-royalBlue text-white">
+      {/* Fixed Navbar */}
+      <nav className="fixed top-0 left-0 right-0 bg-navyBlue px-4 py-2 text-center">
+        <h1 className="text-2xl sm:text-4xl font-bold">
+          {" "}
+          {/* Navbar Title */}
+          Yaseen Ahmed's Portfolio
+        </h1>
+      </nav>
+
+      {/* Main Content */}
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-screen px-4 pt-16 md:flex-row main-content">
+        <div className="flex flex-col justify-center">
           <h2 className="text-4xl sm:text-6xl font-bold text-navyBlue">
             {" "}
             {/* Updated text color */}
