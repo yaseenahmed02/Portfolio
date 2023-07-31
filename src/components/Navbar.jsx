@@ -7,8 +7,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
-  const handleClick = (e) => {
-    e.preventDefault();
+  const handleClick = () => {
     setNav(!nav);
   };
 
@@ -39,11 +38,6 @@ const Navbar = () => {
             Work
           </Link>
         </li>
-        {/* <li className="nav-item">
-          <Link to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li> */}
       </ul>
 
       {/* Hamburger */}
@@ -51,39 +45,39 @@ const Navbar = () => {
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
       {/* Mobile menu */}
-      <ul
-        className={
-          !nav
-            ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-gradient-to-r from-royalBlue to-blueGray flex flex-col justify-center items-center"
-        }
+      <div
+        className={`mobile-menu ${nav ? "active" : ""}`}
+        onClick={handleClick}
       >
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-        {/* <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li> */}
-      </ul>
+        <ul>
+          <li>
+            <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={handleClick}
+              to="skills"
+              smooth={true}
+              duration={500}
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+              Work
+            </Link>
+          </li>
+        </ul>
+      </div>
+
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
