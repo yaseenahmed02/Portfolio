@@ -19,7 +19,7 @@ const Navbar = () => {
       {/* menu */}
       <ul className="hidden md:flex gap-x-8">
         <li className="nav-item">
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="" smooth={true} duration={500}>
             Home
           </Link>
         </li>
@@ -51,7 +51,7 @@ const Navbar = () => {
       >
         <ul>
           <li>
-            <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+            <Link onClick={handleClick} to="" smooth={true} duration={500}>
               Home
             </Link>
           </li>
